@@ -23,6 +23,7 @@ pipeline {
                     }
                     steps {
                         echo "this is test on safari browser"
+                        sh 'sleep 5'
                     }
                 }
             }
@@ -30,7 +31,6 @@ pipeline {
         stage ('DEPLOY') {
             steps {
                 echo "this is build stage"
-                sh 'sleep 5'
             }
         }
     }

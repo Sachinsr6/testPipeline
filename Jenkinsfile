@@ -23,7 +23,6 @@ pipeline {
                     }
                     steps {
                         echo "this is test on safari browser"
-                        sh 'sleep 5'
                     }
                 }
             }
